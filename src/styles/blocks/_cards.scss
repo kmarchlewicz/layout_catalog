@@ -1,0 +1,113 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 16px;
+  background-color: #fff;
+
+  transition: transform 0.3s;
+
+  &__product {
+    padding: 16px 3px 40px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 134px;
+    object-fit: contain;
+  }
+
+  &__description {
+    padding-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #060b35;
+
+    transition: color 0.3s;
+  }
+
+  &__code {
+    padding-top: 4px;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #616070;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover .card__title {
+    color: #34568b;
+  }
+}
+
+.reviews {
+  @include flex-space-between;
+
+  &__count {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #060b35;
+  }
+}
+
+.price {
+  @include flex-space-between;
+
+  padding: 24px 0 16px;
+
+  &__label {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #616070;
+  }
+
+  &__value {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #060b35;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $link-color-main;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  background-color: $link-color-main;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $link-color-alt;
+
+  transition: all 0.3s;
+
+  &:hover {
+    border: 1px solid $link-color-main;
+    background-color: $link-color-alt;
+    color: $link-color-main;
+  }
+}
