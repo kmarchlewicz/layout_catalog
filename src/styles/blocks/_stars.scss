@@ -1,10 +1,12 @@
+@use '../utils/variables' as *;
+
 .stars {
   display: flex;
 
   &__star {
-    margin: 0 2px;
-    width: 16px;
-    height: 16px;
+    margin: $star-spacing;
+    width: $star-size;
+    height: $star-size;
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
     background-position: center;

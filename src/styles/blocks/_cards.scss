@@ -5,17 +5,17 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border-color;
   border-radius: $radius;
   box-sizing: border-box;
   width: $card-size;
-  padding: 16px;
+  padding: $card-spacing;
   background-color: $color-white;
 
   transition: transform $transition-fast;
 
   &__product {
-    padding: 16px 3px 40px;
+    padding: $product-spacing;
   }
 
   &__image {
@@ -26,7 +26,7 @@
   }
 
   &__description {
-    padding-bottom: 16px;
+    padding-bottom: $description-spacing;
   }
 
   &__title {
@@ -39,7 +39,7 @@
   }
 
   &__code {
-    padding-top: 4px;
+    padding-top: $code-spacing;
     font-size: 10px;
     line-height: 14px;
     font-weight: 400;
@@ -69,7 +69,7 @@
 .price {
   @include flex-space-between;
 
-  padding: 24px 0 16px;
+  padding: $price-spacing;
 
   &__label {
     font-size: 12px;
