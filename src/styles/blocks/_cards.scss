@@ -6,13 +6,13 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  border-radius: $radius;
   box-sizing: border-box;
-  width: 200px;
+  width: $card-size;
   padding: 16px;
-  background-color: #fff;
+  background-color: $color-white;
 
-  transition: transform 0.3s;
+  transition: transform $transition-fast;
 
   &__product {
     padding: 16px 3px 40px;
@@ -33,9 +33,9 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
-    color: #060b35;
+    color: $text-color-main;
 
-    transition: color 0.3s;
+    transition: color $transition-fast;
   }
 
   &__code {
@@ -43,7 +43,7 @@
     font-size: 10px;
     line-height: 14px;
     font-weight: 400;
-    color: #616070;
+    color: $muted-text;
   }
 
   &:hover {
@@ -51,7 +51,7 @@
   }
 
   &:hover .card__title {
-    color: #34568b;
+    color: $card-title-hover;
   }
 }
 
@@ -62,7 +62,7 @@
     font-size: 10px;
     line-height: 14px;
     font-weight: 400;
-    color: #060b35;
+    color: $text-color-main;
   }
 }
 
@@ -75,14 +75,14 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
-    color: #616070;
+    color: $muted-text;
   }
 
   &__value {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    color: #060b35;
+    color: $text-color-main;
   }
 }
 
@@ -91,7 +91,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid $link-color-main;
-  border-radius: 5px;
+  border-radius: $radius;
   box-sizing: border-box;
   width: 100%;
   height: 40px;
@@ -103,7 +103,7 @@
   text-decoration: none;
   color: $link-color-alt;
 
-  transition: all 0.3s;
+  transition: all $transition-fast;
 
   &:hover {
     border: 1px solid $link-color-main;

@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding-right: 50px;
-  background-color: #fff;
+  background-color: $color-white;
   font-size: 15px;
 
   &__link {
@@ -47,7 +47,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #060b35;
+    color: $nav-text-color;
 
     transition: color 0.3s;
 
